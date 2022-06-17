@@ -10,8 +10,7 @@ intents:
   - bot_challenge
   - weather_inform
   - city
-  - inform
-  - inquire
+  
 entities:
   - location
 
