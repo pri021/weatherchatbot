@@ -28,7 +28,7 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
-
+  
 - story: weather story 1
   steps: 
   - intent: weather_inform 
@@ -37,8 +37,3 @@ stories:
   - slot_was_set: 
     - location: 'noida'
   - action: action_city_weather
-
-
-
-
-
