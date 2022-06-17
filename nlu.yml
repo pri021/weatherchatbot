@@ -82,17 +82,6 @@ nlu:
       - extremly sad
       - so saad
       - so sad
-  - intent: weather_inform
-    examples: |
-      - what is the weather today
-      - tell me the weather
-      - whats the temperature 
-      - how is the weather
-      - tell me weather details
-      - how is the weather like
-      - weather forecast
-      - what's the weather 
-      - tell me today's weather
 
   - intent: city
       - [delhi](location)
@@ -112,25 +101,16 @@ nlu:
       - am I talking to a bot?
       - am I talking to a human?
 
-  - intent: inform
+  - intent: weather_inform
     examples: |
       - Show me what's the weather in [paris](location)
       - I wonder what is the weather in [mumbai](location) right now?
       - weather in [dubai](location)
       - temperature in [delhi](location)
       - What's the weather in [surat](location) at the moment?
-      - in [goa](location)
-      - in [paris](location)
+      - temperature in [goa](location)
+      - weather in [paris](location)
       - what's weather forecast in [mumbai]
+      - what's the weather in [mumbai] location
 
-  - intent: inquire
-    examples: |
-      - want to know weather
-      - how's the weather
-      - what is weather forecast
-      - how's the weather outside
-      - how is it like in [mumbai](location)
-      - how's goa today
-      - what are temperature details of [delhi](location)
-      - what's weather today
-
+  
