@@ -1,0 +1,136 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+  - intent: weather_inform
+    examples: |
+      - what is the weather today
+      - tell me the weather
+      - whats the temperature 
+      - how is the weather
+      - tell me weather details
+      - how is the weather like
+      - weather forecast
+      - what's the weather 
+      - tell me today's weather
+
+  - intent: city
+      - [delhi](location)
+      - how's weather in [noida](location)
+      - [paris](location)
+      - [dubai](location)
+      - [newyork](location)
+      - [mumbai](location)
+      - [ahemdabad](location)
+      - [chennai](location)
+    
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: inform
+    examples: |
+      - Show me what's the weather in [paris](location)
+      - I wonder what is the weather in [mumbai](location) right now?
+      - weather in [dubai](location)
+      - temperature in [delhi](location)
+      - What's the weather in [surat](location) at the moment?
+      - in [goa](location)
+      - in [paris](location)
+      - what's weather forecast in [mumbai]
+
+  - intent: inquire
+    examples: |
+      - want to know weather
+      - how's the weather
+      - what is weather forecast
+      - how's the weather outside
+      - how is it like in [mumbai](location)
+      - how's goa today
+      - what are temperature details of [delhi](location)
+      - what's weather today
+
