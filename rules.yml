@@ -12,18 +12,3 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: weather 1
-  steps:
-  - intent: weather
-  - action: action_city_weather
-
-
-- rule: weather 3
-  steps:
-  - intent: inquire
-  - action: action_city_weather
-
-- rule: weather 4
-  steps:
-  - intent: weather_inform
-  - action: action_city_weather
