@@ -29,11 +29,40 @@ stories:
   - intent: deny
   - action: utter_goodbye
   
-- story: weather story 1
-  steps: 
-  - intent: weather_inform 
-    entities: 
-    - location: 'delhi'
-  - slot_was_set: 
-    - location: 'noida'
-  - action: action_city_weather
+- story: weather story
+  steps:
+  - intent: inquire_weather
+    entities:
+    - place: mumbai
+  - slot_was_set:
+    - place: mumbai
+  - action: action_tell_weather
+
+- story: weather story 2
+  steps:
+  - intent: inquire_weather
+    entities:
+    - place: delhi
+  - slot_was_set:
+    - place: delhi
+  - action: action_tell_weather
+
+- story: weather story 3
+  steps:
+  - intent: remember_city
+    entities:
+    - place: paris
+  - slot_was_set:
+    - place: paris
+  - action: action_tell_weather
+
+- story: weather story 5
+  steps:
+  - intent: inquire_weather_wocity
+  - action: utter_askcity
+  - intent: remember_city
+    entities:
+    - place: noida
+  - slot_was_set:
+    - place: noida
+  - action: action_tell_weather
