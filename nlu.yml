@@ -1,116 +1,140 @@
 version: "3.1"
 
 nlu:
-  - intent: greet
-    examples: |
-      - hey
-      - hello
-      - hi
-      - hello there
-      - good morning
-      - good evening
-      - moin
-      - hey there
-      - let's go
-      - hey dude
-      - goodmorning
-      - goodevening
-      - good afternoon
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
 
-  - intent: goodbye
-    examples: |
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
 
-  - intent: affirm
-    examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
 
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 
-  - intent: mood_great
-    examples: |
-      - perfect
-      - great
-      - amazing
-      - feeling like a king
-      - wonderful
-      - I am feeling very good
-      - I am great
-      - I am amazing
-      - I am going to save the world
-      - super stoked
-      - extremely good
-      - so so perfect
-      - so good
-      - so perfect
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
 
-  - intent: mood_unhappy
-    examples: |
-      - my day was horrible
-      - I am sad
-      - I don't feel very well
-      - I am disappointed
-      - super sad
-      - I'm so sad
-      - sad
-      - very sad
-      - unhappy
-      - not good
-      - not very good
-      - extremly sad
-      - so saad
-      - so sad
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
 
-  - intent: city
-      - [delhi](location)
-      - how's weather in [noida](location)
-      - [paris](location)
-      - [dubai](location)
-      - [newyork](location)
-      - [mumbai](location)
-      - [ahemdabad](location)
-      - [chennai](location)
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: inquire_weather
+  examples: |
+    - what weather is it in [delhi](place)
+    - what is the weather in [Amsterdam](place)?
+    - whats the weather in [London](place)?
+    - tell me the weather in [Lisbon](place)
+    - what is the current weather in [Berlin](place)
+    - temperature in [mumbai](place)
+- lookup: place
+  examples: |
+    - delhi
+    - mumbai
+    - london
+    - lisbon
+    - amsterdam
+    - noida
+    - delhi
+    - goa
+    - chennai
+    - bangalore
+    - hyderabad
+    - ahmedabad
+    - chennai
+    - kolkata
+    - surat
+    - pune
+    - jaipur
+    - lucknow
+    - kanpur
+    - nagpur
+    - indore
+    - bhopal
+    - patna
+- intent: inquire_weather_wocity
+  examples: |
+    - tell me the weather
+    - whats the weather
+    - how is the weather
+    - tell me the temperature
+    - what's the weather condition
     
-
-  - intent: bot_challenge
-    examples: |
-      - are you a bot?
-      - are you a human?
-      - am I talking to a bot?
-      - am I talking to a human?
-
-  - intent: weather_inform
-    examples: |
-      - Show me what's the weather in [paris](location)
-      - I wonder what is the weather in [mumbai](location) right now?
-      - weather in [dubai](location)
-      - temperature in [delhi](location)
-      - What's the weather in [surat](location) at the moment?
-      - temperature in [goa](location)
-      - weather in [paris](location)
-      - what's weather forecast in [mumbai]
-      - what's the weather in [mumbai] location
-
-  
+- intent: remember_city
+  examples: |
+    - in [Amsterdam](place)
+    - of [London](place)
+    - [mumbai](place)
+    - [delhi](place)
+    - i live in [paris](place)
